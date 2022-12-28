@@ -16,6 +16,7 @@ import web1 from '../public/web1.png';
 import web2 from '../public/web 2.png';
 import web3 from '../public/web3.png';
 import web4 from '../public/web4.png';
+import face from '../public/cartoon-nobg.png';
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -81,8 +82,14 @@ export default function Home() {
             <AiFillLinkedin />
             <AiFillGithub />
           </div>
-          <div className=" mx-auto relative bg-gradient-to-b from-red-500  to-stone-900  flex justify-center rounded-full  w-80 h-80 mt-10 overflow-hidden md:h-96 md:w-96">
-            <img src="/cartoon-nobg.png " className=" rounded-full " />
+          <div className=" mx-auto relative bg-gradient-to-b from-red-500  to-stone-900  flex justify-center rounded-full  w-70 h-70 mt-10 overflow-hidden md:h-96 md:w-96">
+            <Image
+              src={face}
+              className=" rounded-full "
+              objectFit="cover"
+              alt="developer-image"
+              layout="responsive"
+            />
           </div>
         </section>
         <hr className="my-5 mt-10" />
@@ -107,6 +114,7 @@ export default function Home() {
                 src={design}
                 width={100}
                 height={100}
+                alt="developer-image"
               />
               <h3 className="text-stone-900  text-lg font-medium pt-8 pb-2  dark:text-red-600 ">
                 Stuning Designs
@@ -123,9 +131,15 @@ export default function Home() {
             </div>
             {/* {SERVICES} */}
             <div className="text-center shadow-lg p-10 rounded-xl my-10">
-              <Image className="mx-auto " src={code} width={100} height={100} />
+              <Image
+                className="mx-auto "
+                src={code}
+                width={100}
+                height={100}
+                alt="developer-image"
+              />
               <h3 className="text-stone-900  text-lg font-medium pt-8 pb-2 ">
-                Stuning Designs{' '}
+                Stuning Designs
               </h3>
               <p className="text-stone-900 pb-3  dark:text-white">
                 Zombie ipsum reversus ab viral inferno nam, rick cemetery four
@@ -144,6 +158,7 @@ export default function Home() {
                 src={consult}
                 width={100}
                 height={100}
+                alt="developer-image"
               />
               <h3 className="text-stone-900  text-lg font-medium pt-8 pb-2 ">
                 Stuning Designs
@@ -181,6 +196,7 @@ export default function Home() {
                 width={'100%'}
                 height={'100%'}
                 layout="responsive"
+                alt="developer-image"
               />
             </div>
             {/* {web} */}
@@ -191,6 +207,7 @@ export default function Home() {
                 width={'100%'}
                 height={'100%'}
                 layout="responsive"
+                alt="developer-image"
               />
             </div>
             {/* {web} */}
@@ -201,6 +218,7 @@ export default function Home() {
                 width={'100%'}
                 height={'100%'}
                 layout="responsive"
+                alt="developer-image"
               />
             </div>
             {/* {web} */}
@@ -211,6 +229,7 @@ export default function Home() {
                 width={'100%'}
                 height={'100%'}
                 layout="responsive"
+                alt="developer-image"
               />
             </div>
           </div>
