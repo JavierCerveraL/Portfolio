@@ -101,9 +101,6 @@ export default function Home() {
             <h3 className="text-3xl text-stone-900 font-semibold  py-1 pt-5  dark:text-white font-good">
               My Services
             </h3>
-            <p className=" text-stone-900 text-md leading-8 py-2  dark:text-white ">
-              Hola
-            </p>
           </div>
           <div className="lg:flex gap-10">
             {/* {SERVICES} */}
@@ -116,11 +113,9 @@ export default function Home() {
                 alt="developer-image"
               />
               <h3 className="text-stone-900  text-lg font-medium pt-8 pb-2  dark:text-red-600 ">
-                Stuning Designs
+                UI Design
               </h3>
-              <p className="text-stone-900 pb-3 dark:text-white">
-                Zombie ipsum reversus ab viral inferno nam, rick cemetery four
-              </p>
+              <p className="text-stone-900 pb-3 dark:text-white"></p>
               <h4 className="text-red-500 pt-4 pb-2  font-medium dark:text-white">
                 Design Tools I use
               </h4>
