@@ -102,8 +102,7 @@ export default function Home() {
               My Services
             </h3>
             <p className=" text-stone-900 text-md leading-8 py-2  dark:text-white ">
-              Zombie ipsum reversus ab viral inferno nam, rick cemetery four
-              bieapoc Ut, creaturas tee tofth mindless hway. sit' viral burial.
+              Hola
             </p>
           </div>
           <div className="lg:flex gap-10">
@@ -183,8 +182,7 @@ export default function Home() {
               PORTFOLIO
             </h3>
             <p className=" text-stone-900 text-md leading-8 py-2  dark:text-white ">
-              Zombie ipsum reversus ab viral inferno nam, rick cemetery four
-              bieapoc Ut, creaturas tee tofth mindless hway. sit' viral burial.
+              Hola
             </p>
           </div>
           <div className=" flex-col gap-10 py-10 lg:flex-row lg:flex-wrap  grid grid-cols-1 md:grid-cols-2 ">
