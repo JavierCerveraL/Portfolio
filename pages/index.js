@@ -343,6 +343,7 @@ export default function Home() {
                 <label
                   for="name"
                   class="block mb-2 text-sm font-medium text-stone-900 dark:text-stone-300"
+                  name="Name"
                 >
                   Name
                 </label>
@@ -358,6 +359,7 @@ export default function Home() {
                 <label
                   for="email"
                   class="block mb-2 text-sm font-medium text-stone-900 dark:text-stone-300"
+                  name="Email"
                 >
                   Email
                 </label>
@@ -374,6 +376,7 @@ export default function Home() {
                 <label
                   for="message"
                   class="block mb-2 text-sm font-medium text-stone-900 dark:text-stone-400"
+                  name="Message"
                 >
                   Your message
                 </label>
