@@ -18,6 +18,16 @@ import web3 from '../public/web3.png';
 import web4 from '../public/web4.png';
 import face from '../public/cartoon-nobg.png';
 
+import skill1 from '../public/skill1.png';
+import skill2 from '../public/skill2.png';
+import skill3 from '../public/skill3.png';
+import skill4 from '../public/skill4.png';
+import skill5 from '../public/skill5.png';
+import skill6 from '../public/skill6.png';
+import skill7 from '../public/skill7.png';
+import skill8 from '../public/skill8.png';
+import skill9 from '../public/skill9.png';
+
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
   return (
@@ -92,19 +102,19 @@ export default function Home() {
             />
           </div>
         </section>
-        <hr className="my-5 mt-10" />
+        <hr className="my-5 mt-10  bg-black dark:bg-white" />
+
+        {/* {SERVICES} */}
+
         <section>
-          {/* {SERVICES} */}
-          {/* {SERVICES} */}
-          {/* {SERVICES} */}
           <div>
-            <h3 className="text-3xl text-stone-900 font-semibold  py-1 pt-5  dark:text-white font-good">
+            <h3 className="text-3xl text-stone-900 font-semibold  py-1 pt-5 pb-3 dark:text-white font-good">
               My Services
             </h3>
           </div>
           <div className="lg:flex gap-10">
             {/* {SERVICES} */}
-            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+            <div className="text-center shadow-lg p-3 pt-16 rounded-xl my-10">
               <Image
                 className="mx-auto "
                 src={design}
@@ -112,19 +122,16 @@ export default function Home() {
                 height={100}
                 alt="developer-image"
               />
-              <h3 className="text-stone-900  text-lg font-medium pt-8 pb-2  dark:text-red-600 ">
-                UI Design
+              <h3 className="text-stone-900  text-2xl font-medium pt-5 pb-2  dark:text-red-600 ">
+                Responsive Web Design
               </h3>
-              <p className="text-stone-900 pb-3 dark:text-white"></p>
-              <h4 className="text-red-500 pt-4 pb-2  font-medium dark:text-white">
-                Design Tools I use
-              </h4>
-              <p className="text-stone-700 py-1  dark:text-white">Tailwind</p>
-              <p className="text-stone-700 py-1  dark:text-white">Bootstrap</p>
-              <p className="text-stone-700 py-1  dark:text-white">Balsamic</p>
+              <p className="text-stone-900 pb-3 pt-3 dark:text-white text-xl">
+                Your site will display properly on any device, including desktop
+                computers, tables and mobile phones.
+              </p>
             </div>
             {/* {SERVICES} */}
-            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+            <div className="text-center shadow-lg p-3 pt-16 rounded-xl my-10">
               <Image
                 className="mx-auto "
                 src={code}
@@ -132,21 +139,15 @@ export default function Home() {
                 height={100}
                 alt="developer-image"
               />
-              <h3 className="text-stone-900  text-lg font-medium pt-8 pb-2 ">
-                Stuning Designs
+              <h3 className="text-stone-900  text-2xl font-medium pt-5 pb-2  dark:text-red-600 ">
+                UI Design
               </h3>
-              <p className="text-stone-900 pb-3  dark:text-white">
-                Zombie ipsum reversus ab viral inferno nam, rick cemetery four
+              <p className="text-stone-900 pb-3 pt-3 dark:text-white text-xl">
+                Attractive and modern web pages, customized for every client.
               </p>
-              <h4 className="text-red-500 pt-4 pb-2   font-medium  dark:text-white">
-                Design Tools I use
-              </h4>
-              <p className="text-stone-700 py-1  dark:text-white">Tailwind</p>
-              <p className="text-stone-700 py-1  dark:text-white">Bootstrap</p>
-              <p className="text-stone-700 py-1  dark:text-white">Balsamic</p>
             </div>
             {/* {SERVICES} */}
-            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+            <div className="text-center shadow-lg p-3 pt-16 rounded-xl my-10">
               <Image
                 className="mx-auto "
                 src={consult}
@@ -154,31 +155,127 @@ export default function Home() {
                 height={100}
                 alt="developer-image"
               />
-              <h3 className="text-stone-900  text-lg font-medium pt-8 pb-2 ">
-                Stuning Designs
+              <h3 className="text-stone-900  text-2xl font-medium pt-5 pb-2  dark:text-red-600 ">
+                Development and SEO
               </h3>
-              <p className="text-stone-900 pb-3">
-                Zombie ipsum reversus ab viral inferno nam, rick cemetery four
+              <p className="text-stone-900 pb-3 pt-3 dark:text-white text-xl">
+                Your site will display properly on any device, including desktop
+                computers, tables and mobile phones.
               </p>
-              <h4 className="text-red-500 pt-4 pb-2 font-medium">
-                Design Tools I use
-              </h4>
-              <p className="text-stone-700 py-1">Tailwind</p>
-              <p className="text-stone-700 py-1">Bootstrap</p>
-              <p className="text-stone-700 py-1">Balsamic</p>
             </div>
           </div>
         </section>
-        <hr className="my-5 mt-10" />
+        <hr className="my-5 mt-10  bg-black dark:bg-white" />
+
+        {/* {Tools} */}
+
         <section>
           <div>
-            {/* {PORTFOLIO} */}
-            <h3 className="text-3xl text-stone-900 font-semibold  py-1 pt-5  dark:text-white font-good">
+            <h3 className="text-3xl text-stone-900 font-semibold  py-1 pt-5 pb-5 dark:text-white font-good">
+              TOOLS AND SKILSS
+            </h3>
+
+            <div className=" flex-col gap-10 py-10 lg:flex-row lg:flex-wrap  grid grid-cols-3 md:grid-cols-3 sm:grid-cols-3   text-stone-900 font-semibold  py-1 pt-5  dark:text-white ">
+              <div className="basis-1/2 flex-1 shadow-lg">
+                <Image
+                  src={skill1}
+                  className=" rounded-lg object-cover   hover:scale-110 transition duration-300 ease-in-out"
+                  width={'100%'}
+                  height={'100%'}
+                  layout="responsive"
+                  alt="developer-image"
+                />
+              </div>
+              <div className="basis-1/2 flex-1 shadow-lg">
+                <Image
+                  src={skill2}
+                  className=" rounded-lg object-cover   hover:scale-110 transition duration-300 ease-in-out"
+                  width={'100%'}
+                  height={'100%'}
+                  layout="responsive"
+                  alt="developer-image"
+                />
+              </div>
+              <div className="basis-1/2 flex-1 shadow-lg">
+                <Image
+                  src={skill3}
+                  className=" rounded-lg object-cover   hover:scale-110 transition duration-300 ease-in-out"
+                  width={'100%'}
+                  height={'100%'}
+                  layout="responsive"
+                  alt="developer-image"
+                />
+              </div>
+              <div className="basis-1/2 flex-1 shadow-lg">
+                <Image
+                  src={skill4}
+                  className=" rounded-lg object-cover   hover:scale-110 transition duration-300 ease-in-out"
+                  width={'100%'}
+                  height={'100%'}
+                  layout="responsive"
+                  alt="developer-image"
+                />
+              </div>
+              <div className="basis-1/2 flex-1 shadow-lg">
+                <Image
+                  src={skill5}
+                  className=" rounded-lg object-cover   hover:scale-110 transition duration-300 ease-in-out"
+                  width={'100%'}
+                  height={'100%'}
+                  layout="responsive"
+                  alt="developer-image"
+                />
+              </div>
+              <div className="basis-1/2 flex-1 shadow-lg">
+                <Image
+                  src={skill6}
+                  className=" rounded-lg object-cover   hover:scale-110 transition duration-300 ease-in-out"
+                  width={'100%'}
+                  height={'100%'}
+                  layout="responsive"
+                  alt="developer-image"
+                />
+              </div>
+              <div className="basis-1/2 flex-1 shadow-lg">
+                <Image
+                  src={skill7}
+                  className=" rounded-lg object-cover   hover:scale-110 transition duration-300 ease-in-out"
+                  width={'100%'}
+                  height={'100%'}
+                  layout="responsive"
+                  alt="developer-image"
+                />
+              </div>
+              <div className="basis-1/2 flex-1 shadow-lg">
+                <Image
+                  src={skill8}
+                  className=" rounded-lg object-cover   hover:scale-110 transition duration-300 ease-in-out"
+                  width={'100%'}
+                  height={'100%'}
+                  layout="responsive"
+                  alt="developer-image"
+                />
+              </div>
+              <div className="basis-1/2 flex-1 shadow-lg">
+                <Image
+                  src={skill9}
+                  className=" rounded-lg object-cover   hover:scale-110 transition duration-300 ease-in-out"
+                  width={'100%'}
+                  height={'100%'}
+                  layout="responsive"
+                  alt="developer-image"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <hr className="my-5 mt-10  bg-black dark:bg-white" />
+        {/* {PORTFOLIO} */}
+        <section>
+          <div>
+            <h3 className="text-3xl text-stone-900 font-semibold  pt-16  dark:text-white font-good">
               PORTFOLIO
             </h3>
-            <p className=" text-stone-900 text-md leading-8 py-2  dark:text-white ">
-              Hola
-            </p>
           </div>
           <div className=" flex-col gap-10 py-10 lg:flex-row lg:flex-wrap  grid grid-cols-1 md:grid-cols-2 ">
             {/* {web} */}
@@ -227,7 +324,71 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <hr className="my-5 mt-10" />
+        <hr className="my-5 mt-10 bg-black dark:bg-white" />
+
+        {/* {Contact form} */}
+
+        <section>
+          <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+            <h3 className="text-3xl text-stone-900 font-semibold  text-center pt-16 pb-5 dark:text-white font-good">
+              CONTACTME
+            </h3>
+
+            <form action="#" class="space-y-8">
+              <div>
+                <label
+                  for="name"
+                  class="block mb-2 text-sm font-medium text-stone-900 dark:text-stone-300"
+                >
+                  Name
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  class="shadow-sm bg-stone-50 border border-stone-300 text-stone-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-stone-700 dark:border-stone-600 dark:placeholder-stone-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                  placeholder="Your name"
+                  required
+                />
+              </div>
+              <div>
+                <label
+                  for="email"
+                  class="block mb-2 text-sm font-medium text-stone-900 dark:text-stone-300"
+                >
+                  Email
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  class="shadow-sm bg-stone-50 border border-stone-300 text-stone-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-stone-700 dark:border-stone-600 dark:placeholder-stone-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+
+              <div class="sm:col-span-2">
+                <label
+                  for="message"
+                  class="block mb-2 text-sm font-medium text-stone-900 dark:text-stone-400"
+                >
+                  Your message
+                </label>
+                <textarea
+                  id="message"
+                  rows="6"
+                  class="block p-2.5 w-full text-sm text-stone-900 bg-stone-50 rounded-lg shadow-sm border border-stone-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-stone-700 dark:border-stone-600 dark:placeholder-stone-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                  placeholder="Leave a comment..."
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+              >
+                Send message
+              </button>
+            </form>
+          </div>
+        </section>
       </main>
     </div>
   );
