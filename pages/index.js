@@ -334,7 +334,11 @@ export default function Home() {
               CONTACTME
             </h3>
 
-            <form action="#" class="space-y-8">
+            <form
+              action="https://formspree.io/f/xknawryd"
+              method="POST"
+              class="space-y-8"
+            >
               <div>
                 <label
                   for="name"
@@ -380,11 +384,13 @@ export default function Home() {
                   placeholder="Leave a comment..."
                 ></textarea>
               </div>
+
               <button
                 type="submit"
-                class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 bg-gradient-to-r from-red-600
+                to-rose-800 text-white px-4 py-2 rounded-md ml-8 text-center "
               >
-                Send message
+                Send
               </button>
             </form>
           </div>
