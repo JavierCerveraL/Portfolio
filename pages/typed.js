@@ -1,30 +1,25 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { TypeAnimation } from 'react-type-animation';
 
-import Typed from 'react-typed';
+const Typed = () => {
+  return (
+    <TypeAnimation
+      sequence={[
+        'One', // Types 'One'
+        1000, // Waits 1s
+        'Two', // Deletes 'One' and types 'Two'
+        2000, // Waits 2s
+        'Two Three', // Types 'Three' without deleting 'Two'
+        () => {
+          console.log('Done typing!'); // Place optional callbacks anywhere in the array
+        },
+      ]}
+      wrapper="div"
+      cursor={true}
+      repeat={Infinity}
+      style={{ fontSize: '2em' }}
+    />
+  );
+};
 
-class MyComponent extends Component {
-  render() {
-    return (
-      <div>
-        <Typed strings={['Welcome, click anywhere']} typeSpeed={60} />
-        <br />
-
-        <Typed
-          strings={['Web Development', 'Web Design', 'Food', 'Music']}
-          startDelay={3500}
-          shuffle={true}
-          typeSpeed={40}
-          backSpeed={80}
-          loop
-        >
-          <input
-            className="bg-transparent text-center	text-red-500"
-            type="text"
-          />
-        </Typed>
-      </div>
-    );
-  }
-}
-
-export default MyComponent;
+export default Typed;

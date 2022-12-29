@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-import MyComponent from './typed';
+import Typed from './typed';
+
 const { useState, useEffect } = React;
 
 function Scroll() {
@@ -41,7 +42,7 @@ function Scroll() {
             id="hide"
             className="text-stone-100 text-6xl md:text-5xl lg:text-3xl "
           >
-            <MyComponent />
+            <Typed />
           </div>
         )}
       </div>
