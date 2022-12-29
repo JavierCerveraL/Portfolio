@@ -343,7 +343,6 @@ export default function Home() {
                 <label
                   for="name"
                   class="block mb-2 text-sm font-medium text-stone-900 dark:text-stone-300"
-                  name="Name"
                 >
                   Name
                 </label>
@@ -352,6 +351,7 @@ export default function Home() {
                   id="name"
                   class="shadow-sm bg-stone-50 border border-stone-300 text-stone-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-stone-700 dark:border-stone-600 dark:placeholder-stone-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                   placeholder="Your name"
+                  name="Name"
                   required
                 />
               </div>
@@ -359,7 +359,6 @@ export default function Home() {
                 <label
                   for="email"
                   class="block mb-2 text-sm font-medium text-stone-900 dark:text-stone-300"
-                  name="Email"
                 >
                   Email
                 </label>
@@ -368,6 +367,7 @@ export default function Home() {
                   id="email"
                   class="shadow-sm bg-stone-50 border border-stone-300 text-stone-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-stone-700 dark:border-stone-600 dark:placeholder-stone-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                   placeholder="Your Email"
+                  name="Email"
                   required
                 />
               </div>
@@ -376,7 +376,6 @@ export default function Home() {
                 <label
                   for="message"
                   class="block mb-2 text-sm font-medium text-stone-900 dark:text-stone-400"
-                  name="Message"
                 >
                   Your message
                 </label>
@@ -384,6 +383,7 @@ export default function Home() {
                   id="message"
                   rows="6"
                   class="block p-2.5 w-full text-sm text-stone-900 bg-stone-50 rounded-lg shadow-sm border border-stone-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-stone-700 dark:border-stone-600 dark:placeholder-stone-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                  name="Message"
                   placeholder="Leave a comment..."
                 ></textarea>
               </div>
