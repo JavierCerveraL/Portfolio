@@ -331,7 +331,7 @@ export default function Home() {
         <section>
           <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
             <h3 className="text-3xl text-stone-900 font-semibold  text-center pt-16 pb-5 dark:text-white font-good">
-              CONTACTME
+              CONTACT ME
             </h3>
 
             <form
