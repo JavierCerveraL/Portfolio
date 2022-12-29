@@ -35,3 +35,20 @@ nav h1 {
   font-family: 'Coms';
   src: url(../public/Coms.otf);
 }
+
+#hide {
+  position: fixed;
+  top: 50vh;
+  left: 40vh;
+}
+
+#height {
+  position: fixed;
+  top: 5vh;
+  left: 5vh;
+}
+
+#container {
+  min-height: 200vh;
+  background-image: url(black.gif) !important;
+}

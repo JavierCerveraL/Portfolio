@@ -1,4 +1,5 @@
 import Head from 'next/head';
+
 import { BsCircleHalf } from 'react-icons/bs';
 import {
   AiFillTwitterCircle,
@@ -6,11 +7,11 @@ import {
   AiFillGithub,
 } from 'react-icons/ai';
 import { useState } from 'react';
-
+import Scroll from './scroll';
 import Image from 'next/image';
 import design from '../public/design.png';
 import consult from '../public/consulting.png';
-
+// IMAGES
 import code from '../public/code.png';
 import web1 from '../public/web1.png';
 import web2 from '../public/web 2.png';
@@ -30,6 +31,7 @@ import skill9 from '../public/skill9.png';
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
+
   return (
     <div className={darkMode ? 'dark' : ''}>
       <Head>
@@ -38,7 +40,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
-      <main className="bg-stone-100 px-10 md:px-20 lg-px-40 dark:bg-stone-900 ">
+      <Scroll />
+      <main
+        className="bg-stone-100 px-10 md:px-20 lg-px-40 dark:bg-stone-900 "
+        id="home"
+      >
         <section className="min-h-screen bg ">
           {/* {NAVBAR} */}
           {/* {NAVBAR} */}
@@ -87,7 +93,7 @@ export default function Home() {
           </div>
 
           {/* {Icons} */}
-          <div className=" text-5xl flex justify-center gap-10 text-blue-500">
+          <div className=" text-5xl flex justify-center gap-10 text-blue-500 ">
             <AiFillTwitterCircle />
             <AiFillLinkedin />
             <AiFillGithub />
@@ -175,18 +181,18 @@ export default function Home() {
               TOOLS AND SKILSS
             </h3>
 
-            <div className=" flex-col gap-10 py-10 lg:flex-row lg:flex-wrap  grid grid-cols-3 md:grid-cols-3 sm:grid-cols-3   text-stone-900 font-semibold  py-1 pt-5  dark:text-white ">
-              <div className="basis-1/2 flex-1 shadow-lg">
+            <div className=" flex-col gap-10 py-10 lg:flex-row lg:flex-wrap  grid grid-cols-6 md:grid-cols-5 sm:grid-cols-3   text-stone-900 font-semibold  pt-5  dark:text-white ">
+              <div className="basis-1/2 flex-1">
                 <Image
                   src={skill1}
-                  className=" rounded-lg object-cover   hover:scale-110 transition duration-300 ease-in-out"
+                  className=" rounded-lg object-cover    hover:scale-110 transition duration-300 ease-in-out"
                   width={'100%'}
                   height={'100%'}
                   layout="responsive"
                   alt="developer-image"
                 />
               </div>
-              <div className="basis-1/2 flex-1 shadow-lg">
+              <div className="basis-1/2 flex-1 ">
                 <Image
                   src={skill2}
                   className=" rounded-lg object-cover   hover:scale-110 transition duration-300 ease-in-out"
@@ -196,7 +202,7 @@ export default function Home() {
                   alt="developer-image"
                 />
               </div>
-              <div className="basis-1/2 flex-1 shadow-lg">
+              <div className="basis-1/2 flex-1 ">
                 <Image
                   src={skill3}
                   className=" rounded-lg object-cover   hover:scale-110 transition duration-300 ease-in-out"
@@ -206,7 +212,7 @@ export default function Home() {
                   alt="developer-image"
                 />
               </div>
-              <div className="basis-1/2 flex-1 shadow-lg">
+              <div className="basis-1/2 flex-1 ">
                 <Image
                   src={skill4}
                   className=" rounded-lg object-cover   hover:scale-110 transition duration-300 ease-in-out"
@@ -216,17 +222,17 @@ export default function Home() {
                   alt="developer-image"
                 />
               </div>
-              <div className="basis-1/2 flex-1 shadow-lg">
+              <div className="basis-1/2 flex-1  grid content-center  ">
                 <Image
                   src={skill5}
-                  className=" rounded-lg object-cover   hover:scale-110 transition duration-300 ease-in-out"
+                  className=" rounded-lg object-cover hover:scale-110 transition duration-300 ease-in-out"
                   width={'100%'}
                   height={'100%'}
                   layout="responsive"
                   alt="developer-image"
                 />
               </div>
-              <div className="basis-1/2 flex-1 shadow-lg">
+              <div className="basis-1/2 flex-1 ">
                 <Image
                   src={skill6}
                   className=" rounded-lg object-cover   hover:scale-110 transition duration-300 ease-in-out"
@@ -236,7 +242,7 @@ export default function Home() {
                   alt="developer-image"
                 />
               </div>
-              <div className="basis-1/2 flex-1 shadow-lg">
+              <div className="basis-1/2 flex-1 ">
                 <Image
                   src={skill7}
                   className=" rounded-lg object-cover   hover:scale-110 transition duration-300 ease-in-out"
@@ -246,7 +252,7 @@ export default function Home() {
                   alt="developer-image"
                 />
               </div>
-              <div className="basis-1/2 flex-1 shadow-lg">
+              <div className="basis-1/2 flex-1 ">
                 <Image
                   src={skill8}
                   className=" rounded-lg object-cover   hover:scale-110 transition duration-300 ease-in-out"
@@ -256,7 +262,7 @@ export default function Home() {
                   alt="developer-image"
                 />
               </div>
-              <div className="basis-1/2 flex-1 shadow-lg">
+              <div className="basis-1/2 flex-1 ">
                 <Image
                   src={skill9}
                   className=" rounded-lg object-cover   hover:scale-110 transition duration-300 ease-in-out"
@@ -390,8 +396,8 @@ export default function Home() {
 
               <button
                 type="submit"
-                class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 bg-gradient-to-r from-red-600
-                to-rose-800 text-white px-4 py-2 rounded-md ml-8 text-center "
+                class="py-5 px-8 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 bg-gradient-to-r from-red-600
+                to-rose-800   ml-8  "
               >
                 Send
               </button>
