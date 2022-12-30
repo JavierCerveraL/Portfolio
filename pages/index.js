@@ -6,7 +6,7 @@ import {
   AiFillLinkedin,
   AiFillGithub,
 } from 'react-icons/ai';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Scroll from './scroll';
 import Image from 'next/image';
 import design from '../public/design.png';
@@ -32,6 +32,27 @@ import skill9 from '../public/skill9.png';
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
 
+  const ref = useRef(null);
+  useEffect(() => {
+    const el2 = ref.current;
+    const cursor = document.querySelector('.cursor');
+
+    document.addEventListener('mousemove', (e) => {
+      cursor.setAttribute(
+        'style',
+        'top: ' + (e.pageY - 10) + 'px; left: ' + (e.pageX - 10) + 'px;'
+      );
+    });
+
+    document.addEventListener('click', () => {
+      cursor.classList.add('expand');
+
+      setTimeout(() => {
+        cursor.classList.remove('expand');
+      }, 500);
+    });
+  });
+
   return (
     <div className={darkMode ? 'dark' : ''}>
       <Head>
@@ -41,7 +62,7 @@ export default function Home() {
       </Head>
 
       <Scroll />
-
+      <div className="cursor"></div>
       <main
         className="bg-stone-100 px-10 md:px-20 lg-px-40 dark:bg-stone-900 "
         id="home"
@@ -61,7 +82,7 @@ export default function Home() {
               <li>
                 <BsCircleHalf
                   onClick={() => setDarkMode(!darkMode)}
-                  className="cursor-pointer text-3xl text-stone-900 dark:text-stone-100 "
+                  className=" text-3xl text-stone-900 dark:text-stone-100 "
                 />
               </li>
               <li>
