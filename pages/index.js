@@ -189,7 +189,7 @@ export default function Home() {
               <div className="basis-1/2 flex-1">
                 <Image
                   src={skill1}
-                  className=" rounded-lg object-cover  hover:scale-110 transition duration-300 ease-in-out"
+                  className=" rounded-lg object-cover  hvr-wobble-vertical transition duration-300 ease-in-out"
                   width={'100%'}
                   height={'100%'}
                   layout="responsive"
@@ -199,7 +199,7 @@ export default function Home() {
               <div className="basis-1/2 flex-1 ">
                 <Image
                   src={skill2}
-                  className=" rounded-lg object-cover   hover:scale-110 transition duration-300 ease-in-out"
+                  className=" rounded-lg object-cover  hvr-wobble-vertical  transition duration-300 ease-in-out"
                   width={'100%'}
                   height={'100%'}
                   layout="responsive"
@@ -209,7 +209,7 @@ export default function Home() {
               <div className="basis-1/2 flex-1 ">
                 <Image
                   src={skill3}
-                  className=" rounded-lg object-cover   hover:scale-110 transition duration-300 ease-in-out"
+                  className=" rounded-lg object-cover   hvr-wobble-skew  transition duration-300 ease-in-out"
                   width={'100%'}
                   height={'100%'}
                   layout="responsive"
@@ -219,7 +219,7 @@ export default function Home() {
               <div className="basis-1/2 flex-1 ">
                 <Image
                   src={skill4}
-                  className=" rounded-lg object-cover   hover:scale-110 transition duration-300 ease-in-out"
+                  className=" rounded-lg object-cover  hvr-buzz-out  transition duration-300 ease-in-out"
                   width={'100%'}
                   height={'100%'}
                   layout="responsive"
@@ -229,7 +229,7 @@ export default function Home() {
               <div className="basis-1/2 flex-1  grid content-center  ">
                 <Image
                   src={skill5}
-                  className=" rounded-lg object-cover hover:scale-110 transition duration-300 ease-in-out"
+                  className=" rounded-lg object-cover hvr-buzz-out   transition duration-300 ease-in-out"
                   width={'100%'}
                   height={'100%'}
                   layout="responsive"
@@ -239,7 +239,7 @@ export default function Home() {
               <div className="basis-1/2 flex-1 ">
                 <Image
                   src={skill6}
-                  className=" rounded-lg object-cover   hover:scale-110 transition duration-300 ease-in-out"
+                  className=" rounded-lg object-cover  hvr-buzz  hover:scale-110 transition duration-300 ease-in-out"
                   width={'100%'}
                   height={'100%'}
                   layout="responsive"
@@ -249,7 +249,7 @@ export default function Home() {
               <div className="basis-1/2 flex-1 ">
                 <Image
                   src={skill7}
-                  className=" rounded-lg object-cover   hover:scale-110 transition duration-300 ease-in-out"
+                  className=" rounded-lg object-cover hvr-buzz   hover:scale-110 transition duration-300 ease-in-out"
                   width={'100%'}
                   height={'100%'}
                   layout="responsive"
@@ -259,7 +259,7 @@ export default function Home() {
               <div className="basis-1/2 flex-1 ">
                 <Image
                   src={skill8}
-                  className=" rounded-lg object-cover   hover:scale-110 transition duration-300 ease-in-out"
+                  className=" rounded-lg object-cover  hvr-wobble-vertical transition duration-300 ease-in-out"
                   width={'100%'}
                   height={'100%'}
                   layout="responsive"
@@ -269,7 +269,7 @@ export default function Home() {
               <div className="basis-1/2 flex-1 ">
                 <Image
                   src={skill9}
-                  className=" rounded-lg object-cover   hover:scale-110 transition duration-300 ease-in-out"
+                  className=" rounded-lg hvr-skew object-cover   hover:scale-110 transition duration-300 ease-in-out"
                   width={'100%'}
                   height={'100%'}
                   layout="responsive"
