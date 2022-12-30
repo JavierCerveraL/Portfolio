@@ -19,7 +19,7 @@ const Typed = () => {
         style={{
           fontSize: '2.6rem',
           fontFamily: 'Good',
-          textShadow: '4px 4px 10px rgba(255,255,255,0.6)',
+          textShadow: '1px 1px 10px rgba(255,255,255,0.6)',
         }}
       />
     </div>

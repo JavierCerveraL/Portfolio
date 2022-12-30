@@ -41,6 +41,7 @@ export default function Home() {
       </Head>
 
       <Scroll />
+
       <main
         className="bg-stone-100 px-10 md:px-20 lg-px-40 dark:bg-stone-900 "
         id="home"
@@ -177,15 +178,15 @@ export default function Home() {
 
         <section>
           <div>
-            <h3 className="text-3xl text-stone-900 font-semibold  py-1 pt-5 pb-5 dark:text-white font-good">
+            <h3 className="text-3xl text-stone-900 font-semibold  py-1 pt-5 pb-7 dark:text-white font-good">
               TOOLS AND SKILSS
             </h3>
 
-            <div className=" flex-col gap-10 py-10 lg:flex-row lg:flex-wrap  grid grid-cols-6 md:grid-cols-5 sm:grid-cols-3   text-stone-900 font-semibold  pt-5  dark:text-white ">
+            <div className=" flex-col gap-10 py-5 lg:flex-row lg:flex-wrap  grid grid-cols-3 md:grid-cols-9 xs:grid-cols-3   text-stone-900 font-semibold  pt-5  dark:text-white ">
               <div className="basis-1/2 flex-1">
                 <Image
                   src={skill1}
-                  className=" rounded-lg object-cover    hover:scale-110 transition duration-300 ease-in-out"
+                  className=" rounded-lg object-cover  hover:scale-110 transition duration-300 ease-in-out"
                   width={'100%'}
                   height={'100%'}
                   layout="responsive"
