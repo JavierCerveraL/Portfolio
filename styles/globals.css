@@ -39,7 +39,7 @@ nav h1 {
 #hide {
   position: fixed;
   top: 50vh;
-  left: 41vh;
+  left: 50vh;
 }
 
 #height {
@@ -51,4 +51,22 @@ nav h1 {
 #container {
   min-height: 200vh;
   background-image: url(black.gif) !important;
+}
+
+@media (max-width: 888px) {
+  #hide {
+    left: 30vh;
+  }
+}
+
+@media (max-width: 580px) {
+  #hide {
+    left: 15vh;
+  }
+}
+
+@media (max-width: 380px) {
+  #hide {
+    left: 7vh;
+  }
 }

@@ -42,7 +42,7 @@ function Scroll() {
             id="hide"
             className="text-stone-100 text-6xl md:text-5xl lg:text-3xl "
           >
-            <Typed />
+            <Typed className="typed-js" />
           </div>
         )}
       </div>
