@@ -16,19 +16,6 @@ body {
   color: #fafafa;
 }
 
-body {
-  cursor: none !important;
-}
-
-main,
-form,
-input,
-label,
-textarea,
-button {
-  cursor: none !important;
-}
-
 a {
   color: inherit;
   text-decoration: none;
