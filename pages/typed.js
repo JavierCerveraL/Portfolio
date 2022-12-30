@@ -7,16 +7,20 @@ const Typed = () => {
       <TypeAnimation
         sequence={[
           'Welcome, I am Javier', // Types 'One'
-          2000, // Waits 1s
+          1000, // Waits 1s
           'and this is my Portfolio', // Deletes 'One' and types 'Two'
           2000, // Waits 2s
           'Click anywhere :)',
-          2500, // Types 'Three' without deleting 'Two'
+          2900, // Types 'Three' without deleting 'Two'
         ]}
         wrapper="h1"
         cursor={true}
         repeat={Infinity}
-        style={{ fontSize: '1.5rem' }}
+        style={{
+          fontSize: '2.6rem',
+          fontFamily: 'Good',
+          textShadow: '4px 4px 10px rgba(255,255,255,0.6)',
+        }}
       />
     </div>
   );

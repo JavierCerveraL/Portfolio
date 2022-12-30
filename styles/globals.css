@@ -50,23 +50,32 @@ nav h1 {
 
 #container {
   min-height: 200vh;
-  background-image: url(black.gif) !important;
+  background-image: url(blacksand.jpeg) !important;
+  background-position: center;
+  background-size: cover;
+  background-color: black;
 }
 
-@media (max-width: 888px) {
+@media (max-width: 1444px) {
   #hide {
-    left: 30vh;
+    left: 20vh;
   }
 }
 
-@media (max-width: 580px) {
+@media (max-width: 888px) {
   #hide {
     left: 15vh;
   }
 }
 
+@media (max-width: 580px) {
+  #hide {
+    left: 1vh;
+  }
+}
+
 @media (max-width: 380px) {
   #hide {
-    left: 7vh;
+    left: 1vh;
   }
 }
