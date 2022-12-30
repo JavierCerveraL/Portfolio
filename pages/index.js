@@ -182,7 +182,7 @@ export default function Home() {
               TOOLS AND SKILSS
             </h3>
 
-            <div className=" flex-col gap-10 py-5 lg:flex-row lg:flex-wrap  grid grid-cols-3 md:grid-cols-9 xs:grid-cols-3   text-stone-900 font-semibold  pt-5  dark:text-white ">
+            <div className=" flex-col gap-10 py-5 lg:flex-row lg:flex-wrap  grid grid-cols-3 md:grid-cols-5 xs:grid-cols-3   text-stone-900 font-semibold  pt-5  dark:text-white ">
               <div className="basis-1/2 flex-1">
                 <Image
                   src={skill1}
