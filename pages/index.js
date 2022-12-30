@@ -6,7 +6,7 @@ import {
   AiFillLinkedin,
   AiFillGithub,
 } from 'react-icons/ai';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Scroll from './scroll';
 import Image from 'next/image';
 import design from '../public/design.png';
@@ -61,7 +61,7 @@ export default function Home() {
               <li>
                 <BsCircleHalf
                   onClick={() => setDarkMode(!darkMode)}
-                  className="cursor-pointer text-3xl text-stone-900 dark:text-stone-100 "
+                  className=" text-3xl text-stone-900 dark:text-stone-100 "
                 />
               </li>
               <li>
